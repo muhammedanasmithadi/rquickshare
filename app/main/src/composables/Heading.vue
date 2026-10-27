@@ -17,7 +17,7 @@ const emit = defineEmits(['openSettings']);
 </script>
 
 <template>
-	<div class="flex flex-row justify-between items-center px-6 py-4">
+	<div class="flex flex-row justify-between items-center px-6 py-4" data-tauri-drag-region>
 		<!-- Header, Pc name left and options right -->
 		<div>
 			<h4 class="text-md">

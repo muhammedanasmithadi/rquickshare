@@ -110,6 +110,11 @@ async fn main() -> Result<(), anyhow::Error> {
                     }
                     _ => (),
                 })
+                .on_tray_icon_event(|tray, event| {
+                    if let tauri::tray::TrayIconEvent::Click { .. } = event {
+                        open_main_window(tray.app_handle());
+                    }
+                })
                 .build(app)?;
 
             let _ = tray.set_icon_as_template(true);

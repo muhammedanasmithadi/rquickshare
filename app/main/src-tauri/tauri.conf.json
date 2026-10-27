@@ -45,10 +45,12 @@
     "windows": [
       {
         "title": "RQuickShare",
-        "width": 900,
+        "width": 800,
         "height": 600,
         "resizable": true,
-        "fullscreen": false
+        "fullscreen": false,
+        "minimizable": false,
+        "decorations": false
       }
     ],
     "security": {
